@@ -53,6 +53,7 @@ h1{
     /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 18px;
 }
 .buttons-container button{
@@ -81,7 +82,7 @@ h1{
     }
     .calculator{
         width: 420px;
-        height: 100%;
+        height: 95vh;
     }
     .output{
         margin-bottom: 36px;
@@ -99,7 +100,7 @@ h1{
     }
     .buttons-container button{
         font-size: 36px;
-        width: 75px;
+        width: calc(100%/4 - 16px);
     }
     #equal{
     width: 160px;
