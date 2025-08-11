@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded" , () => {
             }
             else{
                 if(operators.includes(value)){
-                    if(calculation === "" && value !== "-") return; // only '-' allowed at start
+                    if(calculation === "" && value !== "-") return; 
                     if(value === "=" || value === "%" || value === "*" || value === "/"){
-                        if(calculation === "") return; // block =, %, *, / at start
+                        if(calculation === "") return;
                     }
                     if(lastChar === "."){
                         calculation = calculation.slice(0, -1) + value;
